@@ -1,6 +1,6 @@
 # Bastion Container
 
-![Build Bastion Container](https://github.com/cwiederspan/bastion-container-image/workflows/Build%20Dev%20Container/badge.svg)
+![Build Bastion Container](https://github.com/cwiederspan/bastion-container-image/workflows/Build%20and%20Push%20Container%20Image/badge.svg)
 
 A project for creating a bastion host container image that can be used to troubleshoot and test applications.
 
