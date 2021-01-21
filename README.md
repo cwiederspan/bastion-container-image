@@ -26,6 +26,22 @@ docker run -it --rm cwiederspan/bastion-container-image:local
 
 ```
 
+## Using the Container
+
+```bash
+
+az container create \
+  -n cdw-privateapp-20210119-aci \
+  -g cdw-privateapp-20210119 \
+  -l westus2 \
+  --image cwiederspan/bastion:latest \
+  --vnet cdw-privateapp-20210119-vnet \
+  --subnet bastion
+
+az container exec -n cdw-privateapp-20210119-aci -g cdw-privateapp-20210119 --exec-command './bin/bash'
+
+```
+
 ## GitHub Actions
 
 This project uses GitHub Actions and the [`pipeline.yml`](.github/workflows/pipeline.yml) file to build and push
